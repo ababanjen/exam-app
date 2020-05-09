@@ -57,7 +57,7 @@ const generateHeaderImages = () => {
       id:`hImg-id-${uuidv4()}`,
       img:generateRandomImg(201+n,'800/200'),
       title:lorem.generateWords(4),
-      content: lorem.generateSentences(numOfSentence)
+      subtitle: lorem.generateSentences(1)
     })
   }
   return data
