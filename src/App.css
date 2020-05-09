@@ -43,11 +43,42 @@
   object-fit: cover;
   z-index: -1;
 }
+.slide-btn {
+  position: absolute;
+  top: 130px;
+  padding: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+}
+.slide-btn.right {
+  top: 0px;
+  left: 91rem;
+}
 .slide h1, .slide h3 {
   color: white;
   text-shadow: 2px 2px 1px #000;
 }
+.dot-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 103rem;
+  margin: 100px 0 0 45rem;
+}
 
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin:2px
+}
+.dot.active {
+  background-color:#bf1e2d
+}
 .center {
   display: block;
   margin-left: auto;

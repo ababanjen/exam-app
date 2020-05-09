@@ -33,9 +33,14 @@ const ImageSlider = () => {
                     </>
                 ))}
             </section>
-            <div>
-                <div onClick={()=>handleSlide()}>&#10094;</div>
-                <div onClick={()=>handleSlide(true)}>&#10095;</div>
+            <div className="slide-btn">
+                <div onClick={()=>handleSlide()} >&#10094;</div>
+                <div onClick={()=>handleSlide(true)} className="slide-btn right">&#10095;</div>
+                <div className="dot-wrapper">
+                    {headerImages.map((s, i) => (
+                        <span className={i === current-1 ? 'dot active' : 'dot'}></span>
+                    ))}
+                </div>
             </div>
         </div>
     )
