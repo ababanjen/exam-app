@@ -35,6 +35,7 @@ const FeaturedBanner = () => {
             title={data.title}
             onHide={()=>handleDialogShow()}
             width="50%"
+            height="50%"
         >
             <Grid>
                 <Cell size={4}>

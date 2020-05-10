@@ -1,15 +1,15 @@
 import React from 'react'
+import { withRouter } from 'react-router'
 
-const Footer = () => {
-    const handleScrollToTop = () => {
-        window.scrollTo({top: 0});
-    }
+const Footer = props => {
     return (
-        <div className="logo center">
-            <span>Copy right &copy; {new Date().getFullYear()}</span>
-            {/* <a onClick={()=>handleScrollToTop()}>Back to top</a> */}
-        </div>
+        <section>
+            <div class="footer-wrapper left">
+                <a onClick={()=>props.history.push('/')}>Homepage</a>
+            </div>
+            <div class="footer-wrapper right">Copy right &copy; {new Date().getFullYear()} | Exam</div>
+        </section>
     )
 }
 
-export default Footer
+export default withRouter(Footer)

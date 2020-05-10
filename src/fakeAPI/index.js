@@ -43,7 +43,7 @@ const generateBannerData = () => {
     data.push({
       id:`ob-id-${uuidv4()}`,
       title:`Banner ${n}`,
-      content: lorem.generateSentences(numOfSentence)
+      content: lorem.generateSentences(3)
     })
   }
   return data

@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   margin: 0;
   font-family: 'Yu Gothic Light', 'Yu Gothic';
   -webkit-font-smoothing: antialiased;
