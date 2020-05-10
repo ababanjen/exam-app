@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {headerImages} from '../../fakeAPI'
-
+import ImageWrapper from '../ImageWrapper'
 const initialState = {
     current:1
 }
@@ -26,7 +26,7 @@ const ImageSlider = () => {
                             <h3>{s.subtitle}</h3>
                         </div>
                         {i === current-1 && (
-                            <img src={s.img} className="image"/>
+                            <ImageWrapper path={s.img &&(s.img)} title={s.title &&(s.title)} className="image" placeHolder="No Slide Image" isHeaderImg={true}/>
                         )}
                     </div>
                 ))}
