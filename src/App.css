@@ -127,12 +127,16 @@ main {
 .scroll-top {
   right: 0;
   height: 120px;
-  align-items: right;
   width: 80%;
+  font-weight: bolder;
+  text-shadow: 1px 0px #796d6d;
+  cursor: pointer;
 }
 .right{
   float: right;
+
 }
+
 .footer-wrapper.left {
 }
 .footer-wrapper.right {
