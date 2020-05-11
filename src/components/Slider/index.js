@@ -21,12 +21,14 @@ const ImageSlider = () => {
             <section className="slider">
                 {headerImages.map((s, i) => (
                     <div key={s.id} className={i === current-1 ? 'slide active' : 'slide'}>
-                        <div>
-                            <h1>{s.title}</h1>
-                            <h3>{s.subtitle}</h3>
-                        </div>
                         {i === current-1 && (
+                            <>
+                            <div>
+                                <h1>{s.title}</h1>
+                                <h3>{s.subtitle}</h3>
+                            </div>
                             <ImageWrapper path={s.img &&(s.img)} title={s.title &&(s.title)} className="image" placeHolder="No Slide Image" isHeaderImg={true}/>
+                            </>
                         )}
                     </div>
                 ))}
